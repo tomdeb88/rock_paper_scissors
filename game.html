@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Rubik+80s+Fade&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="game_style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 class="heading">rock paper scissors</h1>
+      <div class="panel">
+        <p class="games">games<span class="games-number">0</span></p>
+        <div class="results">
+          <span class="wins">wins<span class="wins-number">0</span></span>
+          <span class="losses">losses<span class="losses-number">0</span></span>
+          <span class="draws">draws<span class="draws-number">0</span></span>
+        </div>
+      </div>
+
+      <div class="game-arena">
+        <div class="user">
+          <img src="" alt="" />
+          <p class="user-name">user</p>
+        </div>
+        <div class="vs"><sup>V</sup><sub>S</sub></div>
+        <div class="computer">
+          <img src="" alt="" />
+          <p class="ai-name">ai</p>
+        </div>
+      </div>
+
+      <button class="play">play</button>
+
+      <div class="options">
+        <div class="hand">
+          <img src="hands/rock.svg" alt="rock" data-hand="rock" />
+        </div>
+        <div class="hand">
+          <img src="hands/paper.svg" alt="paper" data-hand="paper" />
+        </div>
+        <div class="hand">
+          <img src="hands/scissors.svg" alt="scissors" data-hand="scissors" />
+        </div>
+      </div>
+    </div>
+
+    <div class="warning-blur">
+      <div class="warning-popup">
+        <p>Choose your hand!</p>
+        <button class="close-popUp">close</button>
+      </div>
+    </div>
+    <script src="game_script.js"></script>
+  </body>
+</html>
